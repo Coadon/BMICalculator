@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>BMI Calculator</title>
+    </head>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <body>
+        <h1>BMI CALCULATOR</h1>
+
+        <table class="center">
+            <tr>
+                <td>
+                    <p><b>Your height (m): </b></p>
+                </td>
+                <td>
+                    <input id="field_height" type="number" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><b>Your mass (kg): </b></p>
+                </td>
+                <td>
+                    <input id="field_mass" type="number" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="calculate()">CALCULATE</button>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <p id="result"></p>
+
+        <script src="sitescript.js" async defer></script>
+    </body>
+</html>
