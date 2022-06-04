@@ -5,5 +5,6 @@ function calculate() {
 
     var bmi = mass/Math.pow(height, 2);
 
-    result.textContent = "Your body mass index is" + bmi + " kg/m²";
+    result.textContent = "Your body mass index is " + bmi + " kg/m²";
+    result.textContent = "Your body mass index is " + bmi + " kg/m²";
 }
