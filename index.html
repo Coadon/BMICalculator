@@ -5,52 +5,163 @@
         <title>BMI Calculator</title>
     </head>
     <style>
+        #notice {
+            border-color: antiquewhite;
+            border-style: inset;
+            padding-left: 1em;
+            margin-bottom: 5em;
+            margin-left: 5em;
+            margin-right: 5em;
+        }
+
+        #info {
+            margin-top: 4em;
+            margin-left: 5em;
+            margin-right: 5em;
+        }
+
         body {
-            text-align: center;
             background-color: darkslategray;
             color: antiquewhite;
         }
 
+        a {
+            color: aqua;
+        }
+
         .center {
+            text-align: center;
             margin-left: auto;
             margin-right: auto;
         }
     </style>
     <body>
-        <h1>BMI CALCULATOR</h1>
+        <div class="center">
+            <h1>BMI CALCULATOR</h1>
 
-        <table class="center">
-            <tr>
-                <td>
-                    <p><b>Your height (m): </b></p>
-                </td>
-                <td>
-                    <input id="field_height" type="number" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p><b>Your mass (kg): </b></p>
-                </td>
-                <td>
-                    <input id="field_mass" type="number" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button onclick="calculate()">CALCULATE</button>
-                </td>
-            </tr>
-        </table>
+            <table class="center">
+                <tr>
+                    <td>
+                        <p><b>Your height (m): </b></p>
+                    </td>
+                    <td>
+                        <input id="field_height" type="number" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><b>Your mass (kg): </b></p>
+                    </td>
+                    <td>
+                        <input id="field_mass" type="number" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="calculate()">CALCULATE</button>
+                    </td>
+                </tr>
+            </table>
 
-        <br>
+            <br />
 
-        <h3 hidden style="text-decoration: underline;" id="results_heading">RESULTS</h3>
+            <h3 hidden style="text-decoration: underline" id="results_heading">
+                RESULTS
+            </h3>
 
-        <p id="result_bmi"></p>
-        <p style="font-weight: bold;" id="result_cat"></p>
+            <p id="result_bmi"></p>
+            <p style="font-weight: bold" id="result_cat"></p>
+        </div>
 
-        <hr>
+        <hr />
+
+        <div id="info">
+            <div id="notice">
+                <h3>IMPORATANT NOTICE</h3>
+                <p>
+                    This BMI calculator is intended for adult uses only. The
+                    results can be off for people aging from 2 to 20 years old.
+                </p>
+            </div>
+
+            <h2>What is body mass index?</h2>
+
+            <p>
+                Body mass index or BMI is a measure to see weather someone has
+                the right weight for their height. It is calculated by dividing
+                your body mass by your height squared.
+                <br />
+                BMI can, but is not intended for finding out whether a person is
+                fat or thin, as BMI does not say how many fat does someone have.
+                BMI mainly says how much muscle or bone in one's body. This may
+                cause athletes to have higher BMI while still being very
+                healthy. Even so, BMI is still popular in giving information on
+                weather somebody is healthy or not.
+            </p>
+
+            <br />
+
+            <table class="center" style="text-align: center">
+                <caption>
+                    BMI basic categories for adults
+                </caption>
+                <tbody>
+                    <tr>
+                        <th scope="col">Category</th>
+                        <th scope="col">BMI (kg/m<sup>2</sup>)</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Underweight (Severe thinness)</th>
+                        <td>&lt; 16.0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Underweight (Moderate thinness)</th>
+                        <td class="nowrap">16.0 – 16.9</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Underweight (Mild thinness)</th>
+                        <td>17.0 – 18.4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Normal range</th>
+                        <td>18.5 – 24.9</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Overweight (Pre-obese)</th>
+                        <td>25.0 – 29.9</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Obese (Class I)</th>
+                        <td>30.0 – 34.9</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Obese (Class II)</th>
+                        <td>35.0 – 39.9</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Obese (Class III)</th>
+                        <td>≥ 40.0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <div class="center">
+            Source: 
+            <a href="https://en.wikipedia.org/wiki/Body_mass_index"
+                ><b>Check BMI on Wikipedia</b></a
+            >
+            •
+            <a href="https://github.com/Coadon/BMICalculator"
+                >Check repo on Github</a
+            >
+            <br />
+            Copyright © 2022, Coadon.
+        </div>
 
         <script src="sitescript.js" async defer></script>
     </body>
