@@ -1,0 +1,17 @@
+body {
+    background-color: darkslategray;
+    color: antiquewhite;
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+a {
+    color: aqua;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
